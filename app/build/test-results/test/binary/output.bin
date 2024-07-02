@@ -1,0 +1,20 @@
+
+àCenario: Cria um usuario na loja                                               [90m# src/test/resources/features/usuario.feature:9[0m
+°  [32mQuando [0m[32meu fa√ßo um POST para [0m[32m[1m/v3/user[0m[32m com os seguintes valores:[0m               [90m# curso.qaops.cucumber.steps.UserStepDefinitions.euFacoUmPOSTParaVUserComOsSeguintesValores(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)[0m
+$    | id         | 10             |
+$    | username   | theUser        |
+$    | firstName  | John           |
+$    | lastName   | James          |
+$    | email      | john@email.com |
+$    | password   | 12345          |
+$    | phone      | 54321          |
+$    | userStatus | 1              |
+˝  [32mEntao [0m[32mquando fa√ßo um GET para [0m[32m[1m/v3/user/theUser[0m[32m, o usuario criado √© retornado[0m [90m# curso.qaops.cucumber.steps.UserStepDefinitions.quandoFacoUmGETParaVUserTheUserOUsuarioCriadoERetornado(java.lang.String)[0m
+
+äCenario: Cria um usuario na loja usando docString                               [90m# src/test/resources/features/usuario.feature:23[0m
+ê  [32mQuando [0m[32meu fa√ßo um POST para [0m[32m[1m/v3/user[0m[32m com a seguinte docString:[0m                [90m# curso.qaops.cucumber.steps.UserStepDefinitions.euFacoUmPOSTParaVUserComOSeguinteDocString(java.lang.String,io.cucumber.docstring.DocString)[0m
+˛  [32mEntao [0m[32mquando fa√ßo um GET para [0m[32m[1m/v3/user/johnUser[0m[32m, o usuario criado √© retornado[0m [90m# curso.qaops.cucumber.steps.UserStepDefinitions.quandoFacoUmGETParaVUserTheUserOUsuarioCriadoERetornado(java.lang.String)[0m
+
+pCenario: Cria um usuario na loja refletindo o negocio [90m# src/test/resources/features/usuario.feature:40[0m
+í  [32mQuando [0m[32mcrio um usuario[0m                              [90m# curso.qaops.cucumber.steps.UserStepDefinitions.crioUmUsuario()[0m
+û  [32mEntao [0m[32mo usu√°rio √© salvo no sistema[0m                  [90m# curso.qaops.cucumber.steps.UserStepDefinitions.oUsuarioESalvoNoSistema()[0m

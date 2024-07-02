@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Gerenciamento de um usuario na Petstore" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-06-13T19:50:06" hostname="SEN002295" time="1.223">
+  <properties/>
+  <testcase name="Cria um usuario na loja" classname="Gerenciamento de um usuario na Petstore" time="1.134"/>
+  <testcase name="Cria um usuario na loja usando docString" classname="Gerenciamento de um usuario na Petstore" time="0.035"/>
+  <testcase name="Cria um usuario na loja refletindo o negocio" classname="Gerenciamento de um usuario na Petstore" time="0.054"/>
+  <system-out><![CDATA[
+Cenario: Cria um usuario na loja                                               ?[90m# src/test/resources/features/usuario.feature:9?[0m
+  ?[32mQuando ?[0m?[32meu faço um POST para ?[0m?[32m?[1m/v3/user?[0m?[32m com os seguintes valores:?[0m               ?[90m# curso.qaops.cucumber.steps.UserStepDefinitions.euFacoUmPOSTParaVUserComOsSeguintesValores(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)?[0m
+    | id         | 10             |
+    | username   | theUser        |
+    | firstName  | John           |
+    | lastName   | James          |
+    | email      | john@email.com |
+    | password   | 12345          |
+    | phone      | 54321          |
+    | userStatus | 1              |
+  ?[32mEntao ?[0m?[32mquando faço um GET para ?[0m?[32m?[1m/v3/user/theUser?[0m?[32m, o usuario criado é retornado?[0m ?[90m# curso.qaops.cucumber.steps.UserStepDefinitions.quandoFacoUmGETParaVUserTheUserOUsuarioCriadoERetornado(java.lang.String)?[0m
+
+Cenario: Cria um usuario na loja usando docString                               ?[90m# src/test/resources/features/usuario.feature:23?[0m
+  ?[32mQuando ?[0m?[32meu faço um POST para ?[0m?[32m?[1m/v3/user?[0m?[32m com a seguinte docString:?[0m                ?[90m# curso.qaops.cucumber.steps.UserStepDefinitions.euFacoUmPOSTParaVUserComOSeguinteDocString(java.lang.String,io.cucumber.docstring.DocString)?[0m
+  ?[32mEntao ?[0m?[32mquando faço um GET para ?[0m?[32m?[1m/v3/user/johnUser?[0m?[32m, o usuario criado é retornado?[0m ?[90m# curso.qaops.cucumber.steps.UserStepDefinitions.quandoFacoUmGETParaVUserTheUserOUsuarioCriadoERetornado(java.lang.String)?[0m
+
+Cenario: Cria um usuario na loja refletindo o negocio ?[90m# src/test/resources/features/usuario.feature:40?[0m
+  ?[32mQuando ?[0m?[32mcrio um usuario?[0m                              ?[90m# curso.qaops.cucumber.steps.UserStepDefinitions.crioUmUsuario()?[0m
+  ?[32mEntao ?[0m?[32mo usuário é salvo no sistema?[0m                  ?[90m# curso.qaops.cucumber.steps.UserStepDefinitions.oUsuarioESalvoNoSistema()?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
